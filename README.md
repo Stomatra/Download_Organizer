@@ -1,4 +1,4 @@
-# Download Organizer (Python 下载文件夹自动整理工具)
+# Download Organizer (下载文件夹自动整理工具)
 
 简体中文版本在后面
 
