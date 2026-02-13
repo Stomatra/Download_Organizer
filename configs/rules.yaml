@@ -1,0 +1,40 @@
+download_dir: "C:/Users/Stoma/Downloads"
+destination_root: "C:/Users/Stoma/Downloads/Sorted"
+
+ignore_extensions:
+  - ".crdownload"
+  - ".part"
+  - ".tmp"
+  - ".download"
+  - ".opdownload"   # Opera
+  - ".!qB"          # qBittorrent 临时后缀（常见）
+  - ".aria2"        # aria2 临时文件
+
+rules:
+  - name: "Images"
+    extensions: [".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp"]
+    target: "Images"
+
+  - name: "Videos"
+    extensions: [".mp4", ".mkv", ".mov", ".avi", ".webm"]
+    target: "Videos"
+
+  - name: "Archives"
+    extensions: [".zip", ".rar", ".7z", ".tar", ".gz"]
+    target: "Archives"
+
+  - name: "Documents"
+    extensions: [".pdf", ".docx", ".doc", ".pptx", ".xlsx", ".md", ".txt"]
+    target: "Documents"
+
+  - name: "Installers"
+    extensions: [".dmg", ".pkg", ".exe", ".msi"]
+    target: "Installers"
+
+  - name: "Torrent"
+    extensions: [".torrent"]
+    target: "Torrents"
+
+  - name: "CatchAll"
+    extensions: ["*"]
+    target: "Others"
